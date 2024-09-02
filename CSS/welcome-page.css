@@ -1,0 +1,166 @@
+
+/* start of welcome page */
+.welcome-page {
+  height: 100vh;
+  width: 100%;
+  margin-bottom: 120px;
+}
+
+.welcome-title-container {
+  /* padding-top: 8vh; */
+  padding-top: 50px;
+  text-align: center;
+}
+
+.welcome-title {
+  font-size: 45px;
+  text-transform: capitalize;
+  padding-bottom: 6px;
+}
+
+.horizontal-rule {
+  margin: 0 auto;
+  height: 6px;
+  width: 170px;
+  background-color: #cfa977;
+  margin-bottom: 40px;
+}
+
+.welcome-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.welcome-parent {
+  overflow: hidden;
+}
+
+.card-style {
+  width: 30%;
+  float: left;
+  background-color: #f3eee6;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.middle-card {
+  margin: 0 5%;
+}
+
+.card-style .card-style-info {
+  text-align: center;
+  margin-top: 30px;
+  letter-spacing: 1px;
+  word-spacing: 1.5px;
+}
+
+.card-style-info h2 {
+  position: relative;
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  padding: 0 25px;
+  color: #333;
+  line-height: 40px;
+  transition: 0.8s;
+  transition-delay: 0.1s;
+}
+
+.card-style-info p {
+  position: relative;
+  font-size: 16px;
+  padding: 0 30px;
+  text-transform: capitalize;
+  color: #444;
+  margin-bottom: 30px;
+  line-height: 23px;
+}
+
+.card-style-info button {
+  position: relative;
+  height: 50px;
+  width: 200px; /* I gave the first button an inline style */
+  font-size: 20px;
+  color: #fff;
+  border-radius: 70px;
+  outline: none;
+  border: 0.1px solid #777;
+  background-color: black;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.final-card-style .card-style-p {
+  margin-bottom: 20px;
+}
+
+.card-style:hover .card-style-info h2,
+.card-style:hover .card-style-info p {
+  color: white;
+  z-index: 10;
+  transition: 0.8s;
+  transition-delay: 0.1s;
+}
+
+.card-style:hover .card-style-info button {
+  z-index: 10;
+}
+
+.card-style-info button:hover {
+  background-color: #fff;
+  color: #444;
+  transition: 0.4s;
+}
+
+/* .card-style .img-container {
+  width: 100%;
+  margin: 0;
+  margin-bottom: -2px;
+} */
+
+.style-img-container {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.style-img-container img {
+  width: 100%;
+  border-radius: 0 0 15px 15px;
+  height: 100%;
+}
+
+/* card style after  */
+.card-style:after,
+.card-style:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  border-radius: 45px;
+  transition: 1s ease;
+}
+.card-style:after {
+  left: 0;
+  top: 0;
+}
+.card-style:before {
+  right: 0;
+  bottom: 0;
+}
+.card-style:hover::after,
+.card-style:hover::before {
+  transition: 1s;
+  opacity: 1;
+  width: 125%;
+  height: 50%;
+}
+.card-style:hover::after {
+  margin-left: -40px;
+}
+.card-style:hover::before {
+  margin-right: -40px;
+}
+/* end of welcome page */

@@ -1,0 +1,182 @@
+
+/* start of plan section */
+.plan-section {
+  width: 100%;
+  height: 700px;
+  letter-spacing: 1.2px;
+  word-spacing: 2px;
+  text-align: center;
+  padding-top: 60px;
+}
+.plan-section .ps-title {
+  font-size: 45px;
+  text-transform: capitalize;
+  margin-bottom: 7px;
+}
+.ps-hr {
+  width: 150px;
+  height: 6px;
+  background-color: #cfa977;
+  margin: auto;
+}
+.plan-container {
+  width: 80%;
+  position: relative;
+  margin: auto;
+}
+.plan-parent {
+  overflow: auto;
+  padding-top: 50px;
+}
+.plan-parent .plan-card {
+  width: 30%;
+  float: left;
+  padding: 30px 0 50px 0;
+  border: 0.1px solid #9999999e;
+  border-radius: 20px;
+  background-color: #94705230;
+  color: #fff;
+  position: relative;
+  font-weight: 700;
+}
+.espresso {
+  margin: 0 5%;
+  background-image: url("../Images/espresso-02.jpg");
+  background-position: -40px 0;
+}
+.late {
+  background-image: url("../Images/late.jpeg");
+}
+.cappuccino {
+  background-image: url("../Images/2.jpg");
+  background-position: -70px -90px;
+}
+.espresso,
+.late {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.plan-card::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+  backdrop-filter: blur(1px);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.plan-card .plan-title {
+  font-size: 35px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  position: relative;
+}
+.plan-card .title-span {
+  font-size: 20px;
+  text-transform: capitalize;
+  display: block;
+  position: relative;
+  margin-bottom: 15px;
+}
+.plan-card .pricing-circle .price {
+  font-size: 25px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.plan-card .pricing-circle span {
+  font-size: 20px;
+  position: relative;
+}
+.plan-card .pricing-circle {
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  padding: 25px 5px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 5;
+}
+.plan-card:hover .pricing-circle {
+  transform: scale(1.2);
+  transition: 0.7s;
+}
+.plan-card ul {
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+.plan-card ul li {
+  font-size: 16px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  position: relative;
+  transition: 0.4s;
+  transition-delay: 0.15s;
+}
+.plan-card .sub-btn {
+  width: 220px;
+  height: 60px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 20px;
+  position: relative;
+  color: black;
+  background-color: #fff;
+  border: none;
+}
+.plan-card::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0.3;
+  border-radius: 20px;
+  transition: 0.6s;
+}
+
+.plan-card:hover::after {
+  height: 100%;
+  visibility: visible;
+  opacity: 1;
+  transition: 1s;
+}
+.plan-card:hover .plan-title,
+.plan-card:hover span,
+.plan-card:hover li,
+.plan-card:hover .price {
+  color: white;
+  transition: 400ms;
+  z-index: 5;
+}
+.plan-card:hover button {
+  z-index: 5;
+}
+.plan-card:hover .plan-title {
+  transition-delay: 0.25s;
+}
+.plan-card:hover .title-span {
+  transition-delay: 0.3s;
+}
+.plan-card:hover .price,
+.plan-card:hover span {
+  transition-delay: 0.45s;
+}
+.plan-card:hover li {
+  transition-delay: 0.6s;
+}
+.sub-btn:hover {
+  color: #fff;
+  background-color: #cfa977b6;
+  transition: 0.6s;
+}
+/* end of plan section */
