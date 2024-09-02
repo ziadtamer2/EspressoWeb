@@ -29,6 +29,7 @@
 .latest-item {
   width: 30%;
   float: left;
+  height: 580px;
   padding: 0 0px 10px;
   background-color: #fff;
   border-radius: 8px;
